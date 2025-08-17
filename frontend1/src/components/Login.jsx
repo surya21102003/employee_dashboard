@@ -31,7 +31,7 @@ export default function Login() {
   };
 
   const handleFacebookLogin = () => {
-    window.location.href = 'https://employee-dashboard-1-7v32.onrender.com/api/api/auth/facebook';
+    window.location.href = 'https://employee-dashboard-1-7v32.onrender.com/api/auth/facebook';
   };
 
 
@@ -89,4 +89,5 @@ export default function Login() {
     
   );
 }
+
 
