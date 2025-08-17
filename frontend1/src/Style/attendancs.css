@@ -1,0 +1,92 @@
+/* General styling to match the screenshot's aesthetic */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main container for the entire card */
+.attendance-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  width: 380px;
+  text-align: center;
+}
+
+/* "Attendance Overview" title */
+.attendance-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Calendar card with rounded corners */
+.calendar-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Calendar header with month and navigation arrows */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.nav-arrow {
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px;
+  user-select: none;
+}
+
+/* Days of the week row */
+.days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #999;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.selected-day {
+  background-color: #4a90e2; /* The blue color from the screenshot */
+  color: #fff;
+}
