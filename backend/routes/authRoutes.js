@@ -39,7 +39,7 @@ router.get('/google/callback',
       (err, token) => {
         if (err) throw err;
        
-        res.redirect(`${process.env.FRONTEND_URL}/auth/callback?token=${token}`);
+        res.redirect(`${https://employee-dashboard-2-v9lt.onrender.com/dashboard}/auth/callback?token=${token}`);
       }
     );
   }
@@ -67,9 +67,10 @@ router.get('/facebook/callback',
       (err, token) => {
         if (err) throw err;
         
-        res.redirect(`${process.env.FRONTEND_URL}/auth/callback?token=${token}`);
+        res.redirect(`${https://employee-dashboard-2-v9lt.onrender.com/dashboard}/auth/callback?token=${token}`);
       }
     );
   }
 );
 module.exports = router;
+
