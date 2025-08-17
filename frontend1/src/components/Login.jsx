@@ -27,11 +27,11 @@ export default function Login() {
     }
   };
   const handleGoogleLogin = () => {
-    window.location.href = 'http://localhost:5000/api/auth/google';
+    window.location.href = 'https://employee-dashboard-1-7v32.onrender.com/api/auth/google';
   };
 
   const handleFacebookLogin = () => {
-    window.location.href = 'http://localhost:5000/api/auth/facebook';
+    window.location.href = 'https://employee-dashboard-1-7v32.onrender.com/api/api/auth/facebook';
   };
 
 
@@ -89,3 +89,4 @@ export default function Login() {
     
   );
 }
+
