@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000/api",
+  baseURL: process.env.REACT_APP_API_URL || "https://employee-dashboard-1-7v32.onrender.com/api",
 });
 
 export const setAuthToken = (token) => {
@@ -10,3 +10,4 @@ export const setAuthToken = (token) => {
 };
 
 export default API;
+
