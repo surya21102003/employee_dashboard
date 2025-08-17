@@ -22,6 +22,15 @@ export default function Signup() {
       alert(err.response?.data?.message || "Signup failed");
     }
   };
+  
+  const handleGoogleLogin = () => {
+    window.location.href = 'https://employee-dashboard-1-7v32.onrender.com/api/auth/google';
+  };
+
+  const handleFacebookLogin = () => {
+    window.location.href = 'https://employee-dashboard-1-7v32.onrender.com/api/auth/facebook';
+  };
+
 
   return (
     <div className="flex items-center justify-center w-500 h-200  bg-softBg" style={{ backgroundImage: `url(${back})`,backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
@@ -63,8 +72,10 @@ export default function Signup() {
 
           </div>
           <div className="flex gap-4 mr-10">
-            <img src={google} alt="Google logo" style={{ height: "50px" }} />
-            <img src={facebook} alt="Facebook logo" style={{ height: "50px" }} />
+            
+            <button onClick={handleGoogleLogin}><img src={google} alt="Google logo" style={{ height: "50px" }} /></button>
+            <button onClick={handleFacebookLogin}><img src={facebook} alt="Facebook logo" style={{ height: "50px" }} /></button>
+
 
           </div>
           <div className="flex">
@@ -77,3 +88,4 @@ export default function Signup() {
     </div>
   );
 }
+
